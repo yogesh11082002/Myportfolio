@@ -1,0 +1,144 @@
+# Portfolio Website Plan
+
+## Technology Stack
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Firebase (Authentication, Firestore, Storage)
+- Shadcn UI (Component Library)
+- Framer Motion (Animations)
+- GSAP (Advanced Animations)
+- Locomotive Scroll / Lenis (Smooth Scrolling)
+- Accentrity UI (Design System)
+
+## Project Structure
+```
+src/
+├── app/
+│   ├── page.tsx (Homepage)
+│   ├── about/page.tsx
+│   ├── projects/page.tsx
+│   ├── projects/[slug]/page.tsx (Individual Project Page)
+│   ├── contact/page.tsx
+│   ├── blog/page.tsx
+│   ├── blog/[slug]/page.tsx (Individual Blog Post)
+│   └── layout.tsx (Root Layout)
+├── components/
+│   ├── ui/ (Shadcn components)
+│   ├── layout/
+│   │   ├── Navbar.tsx
+│   │   ├── Footer.tsx
+│   │   └── Container.tsx
+│   ├── sections/
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Services.tsx
+│   │   └── Contact.tsx
+│   └── animations/
+│       ├── ScrollAnimation.tsx
+│       ├── TextReveal.tsx
+│       ├── ParallaxEffect.tsx
+│       └── CursorFollower.tsx
+├── lib/
+│   ├── firebase.ts
+│   ├── utils.ts
+│   └── animations.ts
+├── hooks/
+│   ├── useScrollAnimation.ts
+│   ├── useMediaQuery.ts
+│   └── useFirebase.ts
+└── styles/
+    └── globals.css
+```
+
+## Pages & Features
+
+### Home Page
+- Animated hero section with TypeScript effect
+- Smooth scroll transitions between sections
+- Parallax scrolling effects
+- Featured projects with hover animations
+- Skills showcase with animated progress bars
+- Client testimonials slider
+- Contact form with animations
+
+### About Page
+- Professional bio with animated sections
+- Timeline of experience with scroll-triggered animations
+- Education and certifications
+- Personal interests and hobbies
+- Downloadable resume
+
+### Projects Page
+- Grid/List view toggle
+- Filter by technology/category
+- Search functionality
+- Each project card:
+  - Thumbnail with hover effect
+  - Brief description
+  - Technologies used
+  - Links to demo/code
+
+### Individual Project Page
+- Hero image with parallax effect
+- Project overview
+- Challenge and solution sections
+- Technology stack used
+- Interactive gallery
+- Next/previous project navigation
+
+### Contact Page
+- Animated contact form
+- Social media links with hover effects
+- Location map (optional)
+- Availability status
+
+### Blog Page (Optional)
+- Blog post cards with animations
+- Filter by categories
+- Search functionality
+
+## Animation Plan
+- Implement smooth scrolling with Lenis
+- Text reveal animations on scroll
+- Parallax effects for images
+- Staggered animations for lists and grids
+- Page transitions
+- Hover effects for interactive elements
+- Custom cursor effect (optional)
+- Loading animations
+
+## Responsive Design
+- Mobile-first approach
+- Optimized layouts for:
+  - Mobile (<640px)
+  - Tablet (641px - 1024px)
+  - Desktop (>1024px)
+- Adaptive navigation (hamburger on mobile)
+- Reduced animations on mobile for performance
+
+## Performance Considerations
+- Implement code splitting
+- Optimize image loading with Next.js Image component
+- Lazy load off-screen content
+- Pre-fetch project data for faster navigation
+- Optimize animations for performance
+
+## Implementation Timeline
+1. Project setup and environment configuration
+2. Create basic components and layouts
+3. Implement core pages and responsive design
+4. Add animations and transitions
+5. Integrate Firebase for any dynamic content
+6. Testing and performance optimization
+7. Deployment
+
+## Future Enhancements
+- Dark/Light mode toggle
+- Multilanguage support
+- More advanced animation sequences
+- Blog functionality with CMS
+- Analytics dashboard 
